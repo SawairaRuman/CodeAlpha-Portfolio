@@ -440,6 +440,177 @@ body::before{
   section{padding:4rem 1.5rem !important}
   footer{flex-direction:column;gap:1rem;text-align:center}
 }
+/* ================= RESPONSIVE ================= */
+
+/* Laptop */
+@media screen and (max-width: 1200px){
+
+  nav,
+  #hero,
+  #about,
+  #skills,
+  #projects,
+  #experience,
+  #blog,
+  #contact,
+  footer{
+    padding-left:2rem;
+    padding-right:2rem;
+  }
+
+  .hero-image-wrap{
+    right:2rem;
+  }
+
+  .hero-image-frame{
+    width:280px;
+    height:340px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 992px){
+
+  .about-grid,
+  .contact-wrap{
+    grid-template-columns:1fr;
+    gap:3rem;
+  }
+
+  .projects-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .skills-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  #hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-content{
+    max-width:100%;
+  }
+
+  .hero-desc{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-actions{
+    justify-content:center;
+  }
+
+  .hero-image-wrap{
+    position:relative;
+    right:auto;
+    top:auto;
+    transform:none;
+    margin-top:3rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+
+  body{
+    cursor:auto;
+  }
+
+  #cursor,
+  #cursor-ring{
+    display:none;
+  }
+
+  nav{
+    padding:1rem;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  #hero,
+  #about,
+  #skills,
+  #projects,
+  #experience,
+  #blog,
+  #contact{
+    padding:4rem 1rem;
+  }
+
+  .hero-name{
+    font-size:3rem;
+  }
+
+  .hero-title{
+    font-size:1rem;
+  }
+
+  .hero-image-frame{
+    width:100%;
+    max-width:320px;
+    height:380px;
+    margin:auto;
+  }
+
+  .projects-grid,
+  .skills-grid,
+  .blog-grid,
+  .about-stats{
+    grid-template-columns:1fr;
+  }
+
+  .theme-switcher{
+    right:1rem;
+    bottom:1rem;
+  }
+
+  footer{
+    flex-direction:column;
+    gap:1rem;
+    text-align:center;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px){
+
+  .hero-name{
+    font-size:2.2rem;
+    line-height:1.1;
+  }
+
+  .section-title{
+    font-size:2rem;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+  }
+
+  .btn-primary,
+  .btn-outline{
+    width:100%;
+    text-align:center;
+  }
+
+  .timeline-item{
+    padding-left:2rem;
+  }
+
+  .hero-image-frame{
+    height:300px;
+  }
+
+  .contact-link-item{
+    flex-direction:column;
+    text-align:center;
+  }
+}
 </style>
 </head>
 <body class="theme-cyber">
